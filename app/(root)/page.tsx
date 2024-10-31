@@ -12,8 +12,6 @@ export default async function Home() {
     limit: 6
   })
 
-  
-
   return (
     <>
        <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
@@ -46,7 +44,7 @@ export default async function Home() {
         </div>
 
           <Collection
-            data={[]}
+            data={events?.data}
             emptyTitle="Мероприятий не найдено"
             emptyStateSubtext="Возвращайтесь позже"
             collectionType="All_Events"
