@@ -58,15 +58,17 @@ const EventDetails = async ({ params: {id}, searchParams}: SearchParamProps) => 
                             width={32}
                             height={32}
                         />
-                        <div className="p-medium-16 lg:p-regular-20 flex flex-wrap items-center">
-                        <p>{new Intl.DateTimeFormat('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date(event.startDateTime))} - {' '}
-                           {new Intl.DateTimeFormat('ru-RU', { hour: '2-digit', minute: '2-digit' }).format(new Date(event.startDateTime))}
-                        </p>
-                        <p>{new Intl.DateTimeFormat('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date(event.endDateTime))} - {' '}
-                           {new Intl.DateTimeFormat('ru-RU', { hour: '2-digit', minute: '2-digit' }).format(new Date(event.endDateTime))}
-                        </p>
 
-                            
+                        <div className="p-medium-16 lg:p-regular-20 flex flex-wrap items-center gap-2">
+                            <p>
+                                {new Intl.DateTimeFormat('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date(event.startDateTime))} - {' '}
+                                {new Intl.DateTimeFormat('ru-RU', { hour: '2-digit', minute: '2-digit' }).format(new Date(event.startDateTime))}
+                            </p>
+                            <span>&nbsp;&nbsp;</span> {/* пробел между датами */}
+                            <p>
+                                {new Intl.DateTimeFormat('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date(event.endDateTime))} - {' '}
+                                {new Intl.DateTimeFormat('ru-RU', { hour: '2-digit', minute: '2-digit' }).format(new Date(event.endDateTime))}
+                            </p>
                         </div>
                     </div>
 
