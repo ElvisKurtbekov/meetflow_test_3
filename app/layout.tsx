@@ -27,8 +27,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Evently",
-  description: "Evently is a platform for organizing events and activities.",
+  title: "MeetFlow",
+  description: "MeetFlow is a platform for organizing events and activities.",
   icons: {
     icon: '/assets/images/logo.svg',
   }
