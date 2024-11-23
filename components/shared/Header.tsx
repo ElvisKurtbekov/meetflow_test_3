@@ -11,7 +11,7 @@ const Header = () => {
       <div className="wrapper flex items-center justify-between">
         <Link href="/" className="w-36">
           <Image 
-            src = "/assets/images/logo.svg" width={64} height={19} 
+            src = "/assets/images/logo.jpg" width={42} height={12} 
             alt="Meetflow Logo" 
           />
         </Link>
