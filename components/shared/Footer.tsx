@@ -11,8 +11,8 @@ const Footer = () => {
                     <Image
                         src="/assets/images/logo.jpg"
                         alt="logo"
-                        width={42}
-                        height={12}
+                        width={128}
+                        height={38}
                     />
                 </Link>
                 <p>2024 MeetFlow. Все права защищены.</p>
